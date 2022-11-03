@@ -3,22 +3,27 @@
 	padding: 0;
 	font-family: Century Gothic;
 }
-header{
+header {
 	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img2.jpg);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
 }
-ul{
+nav {
+	background:orange;
+	height: 70px;
+	width:100%;
+}
+nav ul{
 	float: right;
 	list-style-type: none; 
 	margin-top: 25px;
 }
-ul li{
+nav ul li{
 	display: inline-block;
 
 }
-ul li a{
+nav ul li a{
 	text-decoration: none;
 	color: #fff;
 	padding: 5px 20px;
@@ -36,13 +41,16 @@ ul li.active a{
 h1{
 	font-size: 40px;
 }
+
+}
 p {
 	text-align: justify;
 }
 .logo img{
 	float: left;
-	width: 80px;
-	height: 60px;
+	margin-left: -60px;
+	width: 70px;
+	height: 70px;
 }
 .main{
 	max-width: 1200px;
@@ -57,19 +65,30 @@ p {
 }
 .title h1{
 	color: white;
-	font-size: 70px;
-
+	font-size: 100px;
+	font-family: 'Dancing Script', cursive;
+}
+.subtitle {
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	transform: translate(-50%,-50%);
+}
+.subtitle h5 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 50px;
+	color: white;
 }
 .button{
 	position: absolute;
-	top: 35%;
-	left:30%;
+	top: 40%;
+	left: 30%;
 	transform: translate(-50%,-50%);
 }
 .btn{
 	border: 1px solid #fff;
 	padding: 10px 30px;
-	color: #fff;
+	color: orange;
 	text-decoration: none;
 	transition: 0.6s ease;
 }
@@ -86,33 +105,40 @@ p {
 	display: flex;
 	flex-direction: column;
 }
+.about h1 {
+	color: orange;
+}
 .about p {
 	line-height: 30px;
 }
 .about img {
-	width: 50%;
-}
-.gallery img {
-	width: 70%;
-	height: 200px;
+	width: 100%;
+	height: 700px;
 	object-fit: cover;
 }
-.grid-container {
-	display: grid;
-  	height: 400px;
-  	gap: 10px;
-  	padding: 10px;
-  	grid-template-columns: auto auto auto;
+.location h1 {
+	color: orange;
 }
 .location .map {
 	display: flex;
 	align-content: center;
+}
+.location hr {
+	margin-bottom: 30px;
 }
 .learn {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
 	padding: 20px;
+}
+.learn .heading {
+	width: 400px;
+	background-color: orange;
+	padding: 10px;
+	border-radius: 0 10px 10px 0;
+	margin-bottom: 10px;
+	/*text-align: center;*/
 }
 @media screen and (max-width: 1000px) {
 	header {
@@ -121,4 +147,36 @@ p {
 	.section {
 		height: 40vh;
 	}
+}
+
+.header {
+ 	text-align: center;
+	font-family: 'Dokdo', cursive;
+	font-size: 30px;
+	color: orange;
+}
+
+main {
+	margin-left: 120px;
+}
+
+.img {
+ 	width: 100%;
+ 	height: 200px;
+ 	border-radius: 5px;
+ 	object-fit: cover;
+}
+
+.img:hover {
+	transform: scale(1.2);
+	transition: 1s transform;
+}
+
+.box { 
+	display: block;
+	float: left;
+	width: 30%;
+	padding: 10px;
+	overflow: hidden;
+	border-radius: 5px;
 }
